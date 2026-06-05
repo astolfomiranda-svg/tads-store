@@ -1,4 +1,4 @@
-import produtos from "../data/produtos";
+import produtos from "../../data/produtos";
 import ProdutoCard from "./ProdutoCard";
 
 function Vitrine() {

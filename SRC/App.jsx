@@ -1,7 +1,7 @@
-import Layout from "./components/Layout";
-import Cabecalho from "./components/Cabecalho";
-import Rodape from "./components/Rodape";
-import Vitrine from "./components/Vitrine";
+import Cabecalho from "./components/cabecalho";
+import Layout from "./components/layout";
+import Vitrine from "./components/vitrine";
+import Rodape from "./components/rodape";
 
 function App() {
   return (

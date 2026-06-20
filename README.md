@@ -1,6 +1,6 @@
 # 📱 TADS Tech Store
 
-Uma aplicação completa de e-commerce responsiva desenvolvida em React + Vite. O projeto simula uma loja virtual com foco no nicho de tecnologia (smartphones e notebooks), implementando componentização, consumo de API assíngrona, gerenciamento de rotas e autenticação de usuários.
+Uma aplicação completa de e-commerce responsiva desenvolvida em React + Vite. O projeto simula uma loja virtual com foco no nicho de tecnologia (smartphones e notebooks), implementando componentização, consumo de API assíncrona, gerenciamento de rotas e autenticação de usuários.
 
 ## 🛠️ Funcionalidades Implementadas por Camada
 
@@ -11,7 +11,7 @@ Uma aplicação completa de e-commerce responsiva desenvolvida em React + Vite. 
 
 ## 🚀 Como Executar o Projeto Localmente
 
-1. Certifique-se de ter o [Node.js](https://nodejs.org/) instalado em seu sistema ambiente.
+1. Certifique-se de ter o Node.js instalado em seu sistema ambiente.
 2. Na raiz do projeto, instale os pacotes de dependências declaradas no manifesto `package.json`:
-```bash
+   ```bash
    npm install

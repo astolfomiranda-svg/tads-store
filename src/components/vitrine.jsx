@@ -11,8 +11,8 @@ function Vitrine() {
   const [categoriaSelecionada, setCategoriaSelecionada] = useState("all");
 
   useEffect(() => {
-    // Mudando para 150, a API vai alcançar os smartphones que estão guardados lá no final!
-fetch("https://dummyjson.com/products?limit=150")
+    // Buscando 150 itens para alcançar celulares e notebooks da DummyJSON
+    fetch("https://dummyjson.com/products?limit=150")
       .then((resposta) => {
         if (!resposta.ok) {
           throw new Error("Não foi possível carregar os produtos.");
@@ -20,7 +20,7 @@ fetch("https://dummyjson.com/products?limit=150")
         return resposta.json();
       })
       .then((dados) => {
-        // Filtragem Inteligente: Só entram no estado os itens de tecnologia!
+        // Filtragem de nicho: só entram no estado os itens de tecnologia!
         const apenasTech = dados.products.filter(
           (p) => p.category === "smartphones" || p.category === "laptops"
         );
@@ -33,7 +33,7 @@ fetch("https://dummyjson.com/products?limit=150")
       });
   }, []);
 
-  // Lógica que combina a busca por texto + o filtro do <select>
+  // Lógica combinada: busca por texto + filtro do select
   const produtosFiltrados = produtos.filter((produto) => {
     const bateBusca = produto.title.toLowerCase().includes(busca.toLowerCase());
     const bateCategoria = categoriaSelecionada === "all" || produto.category === categoriaSelecionada;
@@ -47,7 +47,7 @@ fetch("https://dummyjson.com/products?limit=150")
   return (
     <div className="vitrine-container">
       
-      {/* BARRA DE FILTROS (Exigência da Etapa 2) */}
+      {/* BARRA DE FILTROS */}
       <div className="filtros-bar">
         <input
           type="text"
@@ -74,6 +74,7 @@ fetch("https://dummyjson.com/products?limit=150")
           produtosFiltrados.map((produto) => (
             <ProdutoCard
               key={produto.id}
+              id={produto.id} /* ← ESSA É A LINHA QUE ADICIONAMOS! */
               title={produto.title}
               price={produto.price}
               thumbnail={produto.thumbnail}

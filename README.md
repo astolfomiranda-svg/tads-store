@@ -16,3 +16,4 @@ Projeto final de e-commerce desenvolvido em React + Vite.
 * Consumo da API DummyJSON com tratamento de carregamento e erros
 * Rotas com React Router (Home, Detalhes do Produto e Erro 404)
 * Autenticação global com Context API e área protegida
+  <img width="1366" height="768" alt="catalogo png" src="https://github.com/user-attachments/assets/ac2dac15-6bae-4bc3-b1b3-d8bf08da470d" />
